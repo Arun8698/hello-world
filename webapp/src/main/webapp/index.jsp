@@ -1,5 +1,5 @@
 <h1>Choose Payment</h1>
-<p id="choosen-paymenttype">Debit Card</p>
+<p id="choosen-paymenttype">Arun's Debit Card</p>
 <ul class="payment-types">
   <li class="paymenttype pp unselected-left">
     <div class="box">
