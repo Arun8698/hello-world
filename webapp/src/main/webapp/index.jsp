@@ -1,5 +1,5 @@
 <h1>Choose Payment</h1>
-<p id="choosen-paymenttype">Credit Card</p>
+<p id="choosen-paymenttype">Debit Card</p>
 <ul class="payment-types">
   <li class="paymenttype pp unselected-left">
     <div class="box">
@@ -176,7 +176,7 @@
       <div class="form-content">
         <p><strong>This is just a demo</strong></p>
        <p>It is neither complete, nor optimized code. In CSS it is playing around with text-shadow, transformations, transitions and a few animations. Some quick coded JavaScript to handle the required interactions. Anyway it might be an inspiration or a starting point.</p>
-        <p>Made with &#10084; by webandapp.fr</p>
+        <p>Made with &#10084; by Arun28</p>
       </div>
     </form>
      </div>
