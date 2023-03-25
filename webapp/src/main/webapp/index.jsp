@@ -1,184 +1,274 @@
-<h1>Choose Payment</h1>
-<p id="choosen-paymenttype">Arun's Debit Card</p>
-<ul class="payment-types">
-  <li class="paymenttype pp unselected-left">
-    <div class="box">
-    <header>
-      <div class="card" id="pp-card">
-        <div class="flipper">
-          <div class="front">
-            <div class="shine"></div>
-            <div class="shadow"></div>
-            <div class="card-bg">
-              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/513985/pp-front-bg.png" />
-            </div>
-          </div>
+<div class="formbold-main-wrapper">
+  <!-- Author: FormBold Team -->
+  <!-- Learn More: https://formbold.com -->
+  <div class="w-full">
+    <div class="formbold-form-wrapper">
+      <div class="formbold-form-header">
+        <h3>Let's chat? - Online</h3>
+        <button onclick="chatboxToogleHandler()">
+          <svg width="17" height="17" viewBox="0 0 17 17" fill="white">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M0.474874 0.474874C1.10804 -0.158291 2.1346 -0.158291 2.76777 0.474874L16.5251 14.2322C17.1583 14.8654 17.1583 15.892 16.5251 16.5251C15.892 17.1583 14.8654 17.1583 14.2322 16.5251L0.474874 2.76777C-0.158291 2.1346 -0.158291 1.10804 0.474874 0.474874Z"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M0.474874 16.5251C-0.158291 15.892 -0.158291 14.8654 0.474874 14.2322L14.2322 0.474874C14.8654 -0.158292 15.892 -0.158291 16.5251 0.474874C17.1583 1.10804 17.1583 2.1346 16.5251 2.76777L2.76777 16.5251C2.1346 17.1583 1.10804 17.1583 0.474874 16.5251Z"
+            />
+          </svg>
+        </button>
+      </div>
+      <form
+        action="https://formbold.com/s/FORM_ID"
+        method="POST"
+        class="formbold-chatbox-form"
+      >
+        <div class="formbold-mb-5">
+          <label for="name" class="formbold-form-label"> Your Name </label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Your Name"
+            class="formbold-form-input"
+          />
         </div>
-      </div>
-    </header>
-    <form>
-      <div class="form-content">
-        <p><strong>About</strong></p>
- <p>This is a basic concept for a payment, checkout process. The user can select between the different payment types, each type has a seperate form to fill in the required data for the transaction. What I tried to provide:</p> 
-      <ul>
-        <li>A quick and easy way to fill the required form fields.</li>
-        <li>Mobile friendly keyboard display</li>
-        <li>Disabling auto-correction and spellcheck for names</li>
-        <li>Avoid dropdown fields for a better UX.</li>
-      </ul>     
-      </div>
-    </form>
-    </div>
-  </li>
-  <li class="paymenttype selected cc">
-    <div class="box">
-    <header>
-      <div class="card" id="cc-card">
-        <div class="flipper">
-          <div class="front">
-            <div class="shine"></div>
-            <div class="shadow"></div>
-            <div class="card-bg">
-              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/513985/cc-front-bg.png" />
-            </div>
-            <div class="card-content">
-              <div class="credit-card-type"></div>
-              <div class="card-number">
-                <span>1234 1234 1234 1234</span>
-                <span>1234 1234 1234 1234</span>
-              </div>
-              <div class="card-holder">
-                <em>Card holder</em>
-                <span>Your Name</span>
-                <span>Your Name</span>
-              </div>
-              <div class="validuntil">
-                <em>Expire</em>
-                <div class="e-month">
-                    <span>
-                      MM
-                    </span>
-                    <span>
-                      MM
-                    </span>
-                </div>
-                <div class="e-divider">
-                     <span>
-                      /
-                    </span>
-                    <span>
-                      /
-                    </span>
-                </div>
-                <div class="e-year">
-                    <span>
-                      YY
-                    </span>
-                    <span>
-                      YY
-                    </span>
-                </div>
-                
-              </div>
-            </div>
-          </div>
 
-          <div class="back">
-            <div class="shine"></div>
-            <div class="shadow"></div>
-            <div class="card-bg">
-             <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/513985/cc-back-bg-new.png" />
-            </div>
-            <div class="ccv">
-              <em>CCV Number</em>
-              <strong></strong>
-            </div>
-            <div class="card-content">
-              <div class="card-number">
-                <span>4111 1111 1111 1111</span>
-                <span>4111 1111 1111 1111</span>
-              </div>
-              <div class="card-holder">
-                <span>Your Name</span>
-                <span>Your Name</span>
-              </div>
-              <div class="validuntil">
-                <span>
-                  <strong class="e-month">MM</strong> /                 <strong class="e-year">YY</strong>
-                </span>
-                <span>
-                  <strong class="e-month">MM</strong> /
-                  <strong class="e-year">YY</strong>
-                </span>
-              </div>
-            </div>
-          </div>
+        <div class="formbold-mb-5">
+          <label for="email" class="formbold-form-label"> Email Address </label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="example@domain.com"
+            class="formbold-form-input"
+          />
         </div>
-      </div>
-    </header>
 
-    <form>
-      <div class="form-content">
-        <div class="field">
-          <input type="tel" id="cardnumber" maxlength="20" />
-          <span class="focus-bar"></span>
-          <label for="cardnumber">Card number</label>
+        <div class="formbold-mb-5">
+          <label for="message" class="formbold-form-label"> Message </label>
+          <textarea
+            rows="6"
+            name="message"
+            id="message"
+            placeholder="Explain you queries"
+            class="formbold-form-input"
+          ></textarea>
         </div>
-        <div class="field">
-          <input type="text" autocorrect="off" spellcheck="false" id="cardholder" maxlength="25" />
-          <span class="focus-bar"></span>
-          <label for="cardholder">Card holder (Name on card)</label>
+
+        <div>
+          <button class="formbold-btn w-full">Submit</button>
         </div>
-        <div class="field-group">
-          <div class="col-50">
-            <label for="expires-month">Expire (Valid until)</label>   
-            <div class="field expire-date">
-              <div>
-                <input type="tel" id="expires-month" placeholder="MM" allowed-pattern="[0-9]" maxlength="2">
-                <span class="focus-bar"></span>
-              </div>
-              <div class="divider">/</div>
-              <div>
-                <input type="tel" id="expires-year" placeholder="YY" allowed-pattern="[0-9]" maxlength="2">
-                <span class="focus-bar"></span>
-              </div>
-            </div>
-          </div>
-          <div class="col-50">
-            <div class="field ccv">
-              <input type="tel" id="ccv" autocomplete="off" maxlength="3" />
-              <span class="focus-bar"></span>
-              <label for="ccv">CCV</label>
-            </div>
-          </div>
-        </div>
-        <button><span>Submit</span></button>
-      </div>
-    </form>
+      </form>
     </div>
-  </li>
-  <li class="paymenttype ec unselected-right">
-    <div class="box">
-    <header>
-      <div class="card" id="ec-card">
-        <div class="flipper">
-          <div class="front">
-            <div class="shine"></div>
-            <div class="shadow"></div>
-            <div class="card-bg">
-              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/513985/ec-front-bg.png" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <form>
-      <div class="form-content">
-        <p><strong>This is just a demo</strong></p>
-       <p>It is neither complete, nor optimized code. In CSS it is playing around with text-shadow, transformations, transitions and a few animations. Some quick coded JavaScript to handle the required interactions. Anyway it might be an inspiration or a starting point.</p>
-        <p>Made with &#10084; by Arun28</p>
-      </div>
-    </form>
-     </div>
-  </li>
-</ul>
+    <div class="formbold-action-buttons">
+      <button class="formbold-action-btn" onclick="chatboxToogleHandler()">
+        <span class="formbold-cross-icon">
+          <svg
+            width="17"
+            height="17"
+            viewBox="0 0 17 17"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M0.474874 0.474874C1.10804 -0.158291 2.1346 -0.158291 2.76777 0.474874L16.5251 14.2322C17.1583 14.8654 17.1583 15.892 16.5251 16.5251C15.892 17.1583 14.8654 17.1583 14.2322 16.5251L0.474874 2.76777C-0.158291 2.1346 -0.158291 1.10804 0.474874 0.474874Z"
+              fill="white"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M0.474874 16.5251C-0.158291 15.892 -0.158291 14.8654 0.474874 14.2322L14.2322 0.474874C14.8654 -0.158292 15.892 -0.158291 16.5251 0.474874C17.1583 1.10804 17.1583 2.1346 16.5251 2.76777L2.76777 16.5251C2.1346 17.1583 1.10804 17.1583 0.474874 16.5251Z"
+              fill="white"
+            />
+          </svg>
+        </span>
+        <span class="formbold-chat-icon">
+          <svg
+            width="28"
+            height="28"
+            viewBox="0 0 28 28"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19.8333 14.0002V3.50016C19.8333 3.19074 19.7103 2.894 19.4915 2.6752C19.2728 2.45641 18.976 2.3335 18.6666 2.3335H3.49992C3.1905 2.3335 2.89375 2.45641 2.67496 2.6752C2.45617 2.894 2.33325 3.19074 2.33325 3.50016V19.8335L6.99992 15.1668H18.6666C18.976 15.1668 19.2728 15.0439 19.4915 14.8251C19.7103 14.6063 19.8333 14.3096 19.8333 14.0002ZM24.4999 7.00016H22.1666V17.5002H6.99992V19.8335C6.99992 20.1429 7.12284 20.4397 7.34163 20.6585C7.56042 20.8772 7.85717 21.0002 8.16659 21.0002H20.9999L25.6666 25.6668V8.16683C25.6666 7.85741 25.5437 7.56066 25.3249 7.34187C25.1061 7.12308 24.8093 7.00016 24.4999 7.00016Z"
+              fill="white"
+            />
+          </svg>
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Inter", sans-serif;
+  }
+  .formbold-mb-5 {
+    margin-bottom: 20px;
+  }
+  .formbold-pt-3 {
+    padding-top: 12px;
+  }
+  .formbold-main-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px;
+  }
+
+  .formbold-form-wrapper {
+    margin: 0 auto;
+    max-width: 550px;
+    width: 100%;
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    display: none;
+  }
+
+  .formbold-form-wrapper.active {
+    display: block;
+  }
+
+  .formbold-form-label {
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    color: #07074d;
+    margin-bottom: 12px;
+  }
+  .formbold-form-label-2 {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .formbold-form-input {
+    width: 100%;
+    padding: 12px 24px;
+    border-radius: 6px;
+    border: 1px solid #e0e0e0;
+    background: white;
+    font-weight: 500;
+    font-size: 16px;
+    color: #6b7280;
+    outline: none;
+    resize: none;
+  }
+  .formbold-form-input:focus {
+    border-color: #6a64f1;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+  }
+
+  .formbold-btn {
+    text-align: center;
+    font-size: 16px;
+    border-radius: 6px;
+    padding: 14px 32px;
+    border: none;
+    font-weight: 600;
+    background-color: #6a64f1;
+    color: white;
+    cursor: pointer;
+  }
+  .formbold-btn:hover {
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+  }
+
+  .formbold--mx-3 {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+  .formbold-px-3 {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .flex {
+    display: flex;
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  .w-full {
+    width: 100%;
+  }
+  .formbold-form-header {
+    background: #6a64f1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 36px;
+    border-radius: 8px 8px 0px 0px;
+  }
+  .formbold-form-header h3 {
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+  }
+  .formbold-form-header button {
+    color: white;
+    background: transparent;
+    border: none;
+  }
+  .formbold-chatbox-form {
+    padding: 32px 36px;
+  }
+  .formbold-action-buttons {
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 48px;
+  }
+  .formbold-action-btn {
+    width: 70px;
+    height: 70px;
+    background: #6a64f1;
+    color: white;
+    border-radius: 50%;
+    margin-left: 20px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .formbold-action-btn .formbold-cross-icon {
+    display: none;
+  }
+
+  .formbold-action-btn.active .formbold-cross-icon {
+    display: block;
+  }
+
+  .formbold-action-btn.active .formbold-chat-icon {
+    display: none;
+  }
+  @media (min-width: 540px) {
+    .sm\:w-half {
+      width: 50%;
+    }
+  }
+</style>
+<script>
+  const formWrapper = document.querySelector(".formbold-form-wrapper");
+  const formActionButton = document.querySelector(".formbold-action-btn");
+  function chatboxToogleHandler() {
+    formWrapper.classList.toggle("active");
+    formActionButton.classList.toggle("active");
+  }
+</script>
