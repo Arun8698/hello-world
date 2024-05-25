@@ -3,31 +3,64 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Basic Form Example</title>
+    <title>Login Console</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .login-container {
+            width: 300px;
+            margin: 0 auto;
+            padding-top: 50px;
+        }
+        .login-container h1 {
+            text-align: center;
+        }
+        .login-container form {
+            display: flex;
+            flex-direction: column;
+        }
+        .login-container label,
+        .login-container input {
+            margin-bottom: 10px;
+        }
+        .login-container input[type="submit"] {
+            cursor: pointer;
+        }
+        .message {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Basic Form Example</h1>
+    <div class="login-container">
+        <h1>Login</h1>
+        <form action="index.jsp" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <input type="submit" value="Login">
+        </form>
 
-    <form action="index.jsp" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required><br><br>
+        <div class="message">
+            <%
+                // Simulate a simple authentication check
+                String username = request.getParameter("username");
+                String password = request.getParameter("password");
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
-
-        <input type="submit" value="Submit">
-    </form>
-
-    <%
-        // Check if form data is present
-        String name = request.getParameter("name");
-        String email = request.getParameter("email");
-
-        if (name != null && email != null) {
-            out.println("<h2>Form Data Received</h2>");
-            out.println("<p>Name: " + name + "</p>");
-            out.println("<p>Email: " + email + "</p>");
-        }
-    %>
+                if (username != null && password != null) {
+                    if ("admin".equals(username) && "password".equals(password)) {
+                        out.println("<p>Welcome, " + username + "!</p>");
+                    } else {
+                        out.println("<p>Invalid username or password</p>");
+                    }
+                }
+            %>
+        </div>
+    </div>
 </body>
 </html>
